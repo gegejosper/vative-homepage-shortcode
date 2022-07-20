@@ -538,13 +538,11 @@ select option, .form-select option {
 }
 input[type="checkbox"], input[type="radio"], .invisible {
     border:0;
-    clip:rect(0 0 0 0);
-    height:.0625rem;
-    margin:-.0625rem;
+    position: relative;
+    top: 30px;
+    left: 10px;
     overflow:hidden;
     padding:0;
-    position:absolute;
-    width:.0625rem;
 }
 input[type="checkbox"]+label, input[type="checkbox"]+span, input[type="radio"]+label, input[type="radio"]+span {
     font-weight:400;
@@ -5991,8 +5989,8 @@ tfoot tr:first-of-type th, tfoot tr:first-of-type td {
 }
 }@media only screen and (min-width:1280px) {
     .image-block__body {
-    right:-7px;
-    width:251px;
+    right:-127px;
+    width:400px;
     top:-105px;
 }
 }.image-block__body.is-show {

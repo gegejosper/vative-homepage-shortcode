@@ -1,0 +1,276 @@
+/* start LSS button shortcut tabs*/
+.btn--bg-blue, button, input[type='submit'], .quick-contact__title {
+    background-color: #4195d3;
+}
+.lean-six-sigma-shortcuts-tab {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00000075;
+    font-size: 14px;
+    vertical-align: middle;
+    /* padding: 5px 0; */
+    /* border: 1px solid rgb(255 255 255 / 15%); */
+    border-left: none;
+    /* box-shadow: 0 8px 15px 0px #00000042; */
+    /* background-color: rgb(0 0 0 / 30%); */
+    overflow: initial;
+    /* -webkit-backdrop-filter: blur(8px); */
+    /* backdrop-filter: blur(8px); */
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 999;
+    padding-bottom: 82px;
+    /* filter: drop-shadow(0px 8px 15px #00000042); */
+  }
+  
+  .lean-six-sigma-shortcuts-tab:hover {
+    /* width: 160px; */
+    /* padding-bottom: 0; */
+  }
+  
+  .lean-six-sigma-shortcuts-tab:hover .shortcut-tab-item-label {
+    opacity: 1;
+  }
+  
+  .shortcut-tab-pill {
+    display: inline-block;
+    position: relative;
+    background-color: #aaa;
+    background-image: linear-gradient(
+      /* chrome */ hsla(0, 0%, 100%, 0.6),
+      hsla(0, 0%, 100%, 0) 50%,
+      hsla(0, 0%, 0%, 0.1) 50%,
+      hsla(0, 0%, 100%, 0.2)
+    );
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.1s, box-shadow 0.1s;
+    vertical-align: middle;
+    box-shadow: inset 0 0 3px #000000a1;
+  }
+  
+  /* highlight */
+  .shortcut-tab-pill:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    top: 3px;
+    height: 50%;
+    border-radius: 15px;
+    background: linear-gradient(hsla(0, 0%, 100%, 0.4), hsla(0, 0%, 100%, 0));
+  }
+  
+  .shortcut-tab-pill--yellow {
+    background-color: #ffd400;
+  }
+  .shortcut-tab-pill--green {
+    background-color: #5bb096;
+  }
+  .shortcut-tab-pill--black {
+    background-color: #2e2f31;
+  }
+  .shortcut-tab-pill--blue {
+    background-color: #4195d3;
+  }
+  
+  .shortcut-tab-item-label {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 5px;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0;
+    color: #fff !important;
+  }
+  .shortcut-tab-item-label:hover {
+    text-decoration: inherit;
+  }
+  
+  .shortcut-tab-item {
+    padding: 3px 10px;
+    white-space: nowrap;
+  }
+  
+  .shortcut-tab-label {
+    transform: rotate(-90deg);
+  
+    /* Legacy vendor prefixes that you probably don't need... */
+  
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    white-space: nowrap; /* height: 100px; */
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    transform-origin: top left;
+    font-size: 14px;
+    background-color: rgb(0 0 0 / 30%);
+    line-height: 40px;
+    padding: 0 0 0 10px;
+    /* border-radius: 8px 0 0; */
+    transition: left 0.2s; /* box-shadow: 0 8px 15px 0px #00000042; */
+  /*   -webkit-backdrop-filter: blur(8px); */
+  /*   backdrop-filter: blur(8px); */
+  }
+  
+  .lean-six-sigma-shortcuts-tab:hover .shortcut-tab-label {
+    /* display:none; */
+    left: 120px;
+  }
+  
+  .lean-six-sigma-shortcuts-tab:hover {
+    /* padding-bottom:5px; */
+  }
+  
+  .shortcut-tab-items {
+    width: 40px;
+    transition: width 0.2s;
+    background-color: rgb(0 0 0 / 30%);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* border-radius: 8px 0 0; */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    /* box-shadow: 0 8px 15px 0px #00000042; */
+  }
+  
+  .lean-six-sigma-shortcuts-tab:hover .shortcut-tab-items {
+    width: 160px;
+    /* border-radius: 8px 0 0 8px; */
+  }
+  .quick-contact__title {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: fixed;
+      width: 160px;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0;
+      line-height: 2.5;
+      
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      transition: .5s;
+      z-index: 10;
+      right: 40px;
+    height: 45px;
+  }
+  @media only screen and (min-width: 768px) {
+    .lean-six-sigma-shortcuts-tab {
+      top: 300px;
+    }
+      .benefits ul {
+          width: 80%;
+      margin: 0 auto;
+      }
+      .perf-hub-video {
+          padding: 20px;
+      }
+      
+  
+  }
+  @media only screen and (max-width: 767px){
+  .quick-contact__title {
+    right: 0px;
+    top:0px;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      height: 35px;
+      -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+      transform-origin: right bottom;
+      bottom: 0px !important;
+      width: 100% !important;
+      transform: rotate(0deg);
+      position: relative !important;
+  }
+  }
+  @media only screen and (min-width: 1024px) {
+    .lean-six-sigma-shortcuts-tab {
+      top: 300px;
+    }
+      .benefits {
+          display:flex;
+      }
+      .benefits li {
+          font-size:18px;
+      }
+      
+      .main-menu .menu-image {
+          display:none;
+      }
+      
+      .main-menu>li {
+          position:relative;
+      }
+      
+      .main-menu .menu-item-has-children>div, .second-menu .menu-item-has-children>div {
+          width:auto;
+          white-space:nowrap;
+          left:-40px;
+      }
+      
+      .main-menu .sub-menu li {
+          width:auto;
+      }
+      
+      .main-menu .menu-item-has-children>div>div {
+          width:290px;
+  /* 		white-space:initial; */
+      }
+      
+      .main-menu .menu-item-has-children .sub-menu, .second-menu .menu-item-has-children .sub-menu {
+          white-space:nowrap;
+      }
+      
+      
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .lean-six-sigma-shortcuts-tab {
+      top: 330px;
+      height: 229px;
+    }
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    .lean-six-sigma-shortcuts-tab {
+      top: 350px;
+        height: 229px;
+    }
+  }
+  .icon-arrow-left:before, .slick-box-icon-text-prev:before, .quick-contact__row-right:before {
+      content: "\e90e";
+  }
+  
