@@ -1,3 +1,9 @@
+.image-block__item__title {
+    font-size: 14px;
+}
+.image-block__body {
+        z-index: 1000;
+}
 .icon-certification:before {
     background-repeat:no-repeat;
     background-image: url(../img/Sentius_VAT_OrganisationalJourney_Icons-05-o.png);
@@ -74,9 +80,9 @@
     text-decoration: none;
     color: #ef961d !important;
 }
-.image-block__item:hover a{
+/* .image-block__item:hover a{
     color: #fff !important;
-}
+} */
 .image-block>.container {
     border-bottom: 0px !important;
 }
@@ -91,9 +97,39 @@
 }
 .image-block__icon {
     position: relative;
-    left: 35%;
 }
 .image-block__title, .image-block__text{
     font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
     font-weight:700;
 }
+
+@media only screen and (max-width: 414px) {
+    .icon-projectimplementation:before {
+        height: 35px;
+        left:-7px;
+    }
+    .icon-capabilitycoaching:before{
+        height: 35px;
+        left:-2px;
+    }
+    .icon-analysisalignment:before {
+        height: 30px;
+        left:0px;
+    }
+    .icon-certification:before {
+        height: 25px;
+        left:-7px;
+    }
+      
+    .icon-leadershipculture:before {
+        height: 35px;
+        left:-2px;
+    }
+    .shortcut-tab-label {
+        bottom: -47px;
+       
+    }
+    .image-block__item__title {
+        font-size: 10px;
+    }
+  }
