@@ -4,7 +4,7 @@
     $(document).ready(function () {
         // js add content
         if (window.innerWidth >= 1024) {
-            $('.image-block__item a').attr('href', 'javascript:;')   
+            //$('.image-block__item a').attr('href', 'javascript:;')   
         }
         if(window.innerWidth < 1024){
             $('.image-block__item').removeClass('js-add-content');
